@@ -1,0 +1,14 @@
+def compare_two_numbers():
+    try:
+         first_number = float(input("Введіть перше число: "))
+        second_number = float(input("Введіть друге число: "))
+        
+       if first_number > second_number:
+            print(f"Перше число ({first_number}) більше за друге число ({second_number}).")
+        elif first_number < second_number:
+            print(f"Друге число ({second_number}) більше за перше число ({first_number}).")
+        else:
+            print("Числа рівні.")
+     except ValueError:
+       print("Помилка: Будь ласка, введіть коректні числові значення.")
+compare_two_numbers()
