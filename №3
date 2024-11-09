@@ -1,0 +1,13 @@
+import math
+def calculate_nth_root():
+    try:
+   number = float(input("Введіть число (для обчислення кореня): "))
+        root = float(input("Введіть степінь кореня (n): "))
+        if number < 0 and root % 2 == 0:
+            raise ValueError("Не можна обчислити парний корінь з від’ємного числа.")
+        nth_root = number ** (1 / root)
+        print(f"Корінь {root}-го степеня з числа {number} дорівнює {nth_root}.")
+    
+    except ValueError as e: 
+        print(f"Помилка: {e}")
+calculate_nth_root()
