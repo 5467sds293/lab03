@@ -1,0 +1,8 @@
+def calculate_absolute_value():
+    try:
+        number = float(input("Введіть число: "))
+       absolute_value = abs(number)
+print(f"Модуль числа {number} дорівнює {absolute_value}.")
+  except ValueError:
+    print("Помилка: Будь ласка, введіть коректне число.")
+calculate_absolute_value()
